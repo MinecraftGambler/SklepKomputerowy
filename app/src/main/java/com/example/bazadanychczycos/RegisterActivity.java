@@ -34,7 +34,6 @@ public class RegisterActivity extends AppCompatActivity {
         Button registerButton = findViewById(R.id.button_register);
         registerButton.setOnClickListener(v -> registerUser());
 
-        // Dodaj obsługę kliknięcia dla przycisku logowania
         Button loginButton = findViewById(R.id.button_login);
         loginButton.setOnClickListener(v -> {
             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);

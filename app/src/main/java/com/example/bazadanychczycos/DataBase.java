@@ -157,7 +157,6 @@ public class DataBase extends AppCompatActivity {
             return itemList;
         }
 
-        // Generate a list of default items and add to the database
         private void addDefaultItems(SQLiteDatabase db) {
             // Klawiatury
             addItemDirectly(db, context.getString(R.string.gaming_keyboard), 199.99f, context.getString(R.string.gaming_keyboard_desc), "klawiatura1.png", "klawiatury");
@@ -194,8 +193,6 @@ public class DataBase extends AppCompatActivity {
             db.insert(TABLE_ITEMS, null, values);
         }
 
-        // Generate a default set of items
-
         public List<Item> getItemsByCategory(String category) {
             List<Item> itemList = new ArrayList<>();
             SQLiteDatabase db = this.getReadableDatabase();
@@ -225,9 +222,9 @@ public class DataBase extends AppCompatActivity {
         public long addEquipment(String name, float price, String description, String picture) {
             SQLiteDatabase db = this.getWritableDatabase();
             ContentValues values = new ContentValues();
-            
+
             values.put(COLUMN_NAME, name);
-            values.put(COLUMN_PRICE, price); 
+            values.put(COLUMN_PRICE, price);
             values.put(COLUMN_DESCRIPTION, description);
             values.put(COLUMN_PICTURE, picture);
 
@@ -235,8 +232,6 @@ public class DataBase extends AppCompatActivity {
             db.close();
             return newRowId;
         }
-
-        // Metoda do zapisywania zamówienia
         public long saveOrder(String customerName, String orderDetails, float totalPrice, String username) {
             SQLiteDatabase db = this.getWritableDatabase();
             ContentValues values = new ContentValues();
@@ -250,30 +245,6 @@ public class DataBase extends AppCompatActivity {
             long id = db.insert(TABLE_ORDERS, null, values);
             db.close();
             return id;
-        }
-
-        public List<String> getAllOrders() {
-            List<String> ordersList = new ArrayList<>();
-            SQLiteDatabase db = this.getReadableDatabase();
-            
-            Cursor cursor = db.query(TABLE_ORDERS, null, null, null, null, null, 
-                COLUMN_ORDER_DATE + " DESC");
-
-            if (cursor.moveToFirst()) {
-                do {
-                    @SuppressLint("Range") String date = cursor.getString(cursor.getColumnIndex(COLUMN_ORDER_DATE));
-                    @SuppressLint("Range") String name = cursor.getString(cursor.getColumnIndex(COLUMN_CUSTOMER_NAME));
-                    @SuppressLint("Range") String details = cursor.getString(cursor.getColumnIndex(COLUMN_ORDER_DETAILS));
-                    @SuppressLint("Range") float total = cursor.getFloat(cursor.getColumnIndex(COLUMN_TOTAL_PRICE));
-                    
-                    ordersList.add(String.format("Data: %s\nZamawiający: %s\n%s\nSuma: %.2f zł\n", 
-                        date, name, details, total));
-                } while (cursor.moveToNext());
-            }
-            cursor.close();
-            db.close();
-            
-            return ordersList;
         }
 
         public List<OrderItem> getAllOrdersWithIds() {
@@ -306,7 +277,6 @@ public class DataBase extends AppCompatActivity {
             db.close();
         }
 
-        // Metoda do dodawania użytkownika
         public long addUser(String username, String password) {
             SQLiteDatabase db = this.getWritableDatabase();
             ContentValues values = new ContentValues();
@@ -317,24 +287,11 @@ public class DataBase extends AppCompatActivity {
             return id;
         }
 
-        // Metoda do sprawdzania czy użytkownik istnieje
         public boolean userExists(String username) {
             SQLiteDatabase db = this.getReadableDatabase();
             Cursor cursor = db.query(TABLE_USERS, new String[]{COLUMN_USER_ID},
                     COLUMN_USERNAME + "=?",
                     new String[]{username}, null, null, null);
-            boolean exists = (cursor.getCount() > 0);
-            cursor.close();
-            db.close();
-            return exists;
-        }
-
-        // Metoda do weryfikacji użytkownika
-        public boolean verifyUser(String username, String password) {
-            SQLiteDatabase db = this.getReadableDatabase();
-            Cursor cursor = db.query(TABLE_USERS, new String[]{COLUMN_USER_ID},
-                    COLUMN_USERNAME + "=? AND " + COLUMN_PASSWORD + "=?",
-                    new String[]{username, password}, null, null, null);
             boolean exists = (cursor.getCount() > 0);
             cursor.close();
             db.close();

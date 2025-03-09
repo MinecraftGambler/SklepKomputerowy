@@ -16,11 +16,6 @@ public class ShortcutAdapter extends RecyclerView.Adapter<ShortcutAdapter.ViewHo
     private List<Shortcut> shortcuts;
     private Context context;
 
-    public ShortcutAdapter(Context context, List<Shortcut> shortcuts) {
-        this.context = context;
-        this.shortcuts = shortcuts;
-    }
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -33,10 +28,6 @@ public class ShortcutAdapter extends RecyclerView.Adapter<ShortcutAdapter.ViewHo
         Shortcut shortcut = shortcuts.get(position);
         holder.nameTextView.setText(shortcut.getName());
         holder.iconImageView.setImageResource(shortcut.getIcon());
-        
-        holder.itemView.setOnClickListener(v -> {
-            // Tutaj dodaj logikę, co się stanie po kliknięciu skrótu
-        });
     }
 
     @Override

@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox checkBoxMouse, checkBoxKeyboard, checkBoxMonitor;
     private TextView quantityTextMouse, quantityTextKeyboard, quantityTextMonitor;
     private RecyclerView recyclerView;
-    private ItemAdapter itemAdapter;
     private ArrayList<Item> itemList;
     private String username;
 
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setLocale(getPreferredLanguage()); // Ustaw język na podstawie preferencji lub domyślnego języka systemowego
+        setLocale(getPreferredLanguage());
         setContentView(R.layout.activity_main);
 
         // Konfiguracja toolbara
@@ -253,7 +252,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // Menu opcji
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
@@ -264,10 +262,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.item1) {
-            zapiszKoszyk(); // Zapisz koszyk
+            zapiszKoszyk();
             return true;
         } else if (id == R.id.item2) {
-            wczytajKoszyk(); // Wczytaj koszyk
+            wczytajKoszyk();
             return true;
         } else if (id == R.id.item3) {
             wyslijSMS();
@@ -288,23 +286,18 @@ public class MainActivity extends AppCompatActivity {
             finish();
             return true;
         } else if (id == R.id.change_language) {
-            // Sprawdź aktualny język i zmień go na przeciwny
             String currentLanguage = getPreferredLanguage();
             if (currentLanguage.equals("en")) {
-                setLocale("pl"); // Zmień na polski
+                setLocale("pl");
                 savePreferredLanguage("pl");
             } else {
-                setLocale("en"); // Zmień na angielski
+                setLocale("en");
                 savePreferredLanguage("en");
             }
-            recreate(); // Zrestartuj aktywność, aby zastosować zmiany
+            recreate();
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    private void stronaGlowna() {
-        // Logika głównej strony
     }
 
     private void wyslijSMS() {
@@ -372,20 +365,6 @@ public class MainActivity extends AppCompatActivity {
         builder.setTitle(getString(R.string.about_title))
                 .setMessage(getString(R.string.about_content)).show();
     }
-
-    private List<Item> getItemsByCategory(String category) {
-        List<Item> allItems = dbHelper.getAllItems();
-        List<Item> filteredItems = new ArrayList<>();
-
-        for (Item item : allItems) {
-            if (item.getCategory() != null && item.getCategory().equals(category)) {
-                filteredItems.add(item);
-            }
-        }
-
-        return filteredItems;
-    }
-
     private void handleOrder() {
         EditText customerNameInput = findViewById(R.id.edit_text_notes);
         String customerName = customerNameInput.getText().toString();
@@ -667,13 +646,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, getString(R.string.cart_loaded), Toast.LENGTH_SHORT).show();
     }
-
-    private boolean checkForErrors() {
-        // Tutaj dodaj swoją logikę sprawdzania błędów
-        // Zwróć true, jeśli wystąpił błąd, w przeciwnym razie false
-        return true; // Przykładowo, zawsze zwraca błąd
-    }
-
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void createShortcuts() {
         ShortcutManager shortcutManager = getSystemService(ShortcutManager.class);

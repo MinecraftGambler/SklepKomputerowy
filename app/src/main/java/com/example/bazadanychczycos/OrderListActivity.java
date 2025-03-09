@@ -18,7 +18,6 @@ public class OrderListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_list);
 
-        // Konfiguracja toolbara
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
@@ -26,17 +25,13 @@ public class OrderListActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        // Inicjalizacja bazy danych
         dbHelper = new DataBase.DatabaseHelper(this);
-        
-        // Inicjalizacja ListView
+
         orderListView = findViewById(R.id.order_list_view);
-        
-        // Ustawienie nazwy użytkownika
+
         SharedPreferences sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE);
         String username = sharedPreferences.getString("username", getString(R.string.guest));
 
-        // Pobierz i wyświetl zamówienia dla konkretnego użytkownika
         orders = dbHelper.getOrdersByUsername(username);
         displayOrders();
     }

@@ -76,6 +76,6 @@ public class Item {
 
     @Override
     public String toString() {
-        return name; // Umożliwia wyświetlanie nazw produktów w Spinnerze
+        return name;
     }
 }
