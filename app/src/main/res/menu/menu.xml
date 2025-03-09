@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item1"
+        android:title="@string/menu_save_cart" />
+    <item android:id="@+id/item2"
+        android:title="@string/menu_load_cart" />
+    <item android:id="@+id/item3"
+        android:title="@string/send_sms" />
+    <item android:id="@+id/change_language"
+        android:title="@string/menu_change_language" />    
+    <item android:id="@+id/item4"
+        android:title="@string/menu_show_list" />
+    <item android:id="@+id/item5"
+        android:title="@string/menu_share" />
+    <item android:id="@+id/item6"
+        android:title="@string/menu_about" />
+    <item android:id="@+id/item_logout"
+        android:title="@string/menu_logout" />
+</menu>

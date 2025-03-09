@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">Sklep z komputerami</string>
+    <string name="shortcut_icon">Ikona skrótu</string>
+    <string name="shortcut_name">Nazwa skrótu</string>
+    <string name="Glowna">Strona główna</string>
+    <string name="Lista">Lista zamówień</string>
+    <string name="Wyslij">Wyślij sms</string>
+    <string name="Udostepnij">Udostępnij</string>
+    <string name="O_programie">O programie</string>
+    <string name="nazwa_uzytkownika">Nazwa użytkownika</string>
+    <string name="haslo">Hasło</string>
+    <string name="zarejestruj">Zarejestruj</string>
+    <string name="masz_juz_konto_zaloguj_sie">Masz już konto? Zaloguj się</string>
+    <string name="rejestracja">Rejestracja</string>
+    <string name="login">Zaloguj</string>
+    <string name="send_sms">Wyślij SMS</string>
+    <string name="phone_number_hint">Numer telefonu (np. 123456789)</string>
+    <string name="toolbar_title">Ekran logowania</string>
+    <string name="button_register">Zarejestruj się</string>
+    <string name="button_login">Zaloguj</string>
+    <string name="order_saved">Zamówienie zostało zapisane</string>
+    <string name="order_error">Błąd podczas zapisywania zamówienia</string>
+    <string name="no_orders">Brak zamówień do udostępnienia</string>
+    <string name="email_error">Brak zainstalowanej aplikacji do wysyłania maili.</string>
+    <string name="registration_successful">Rejestracja zakończona sukcesem</string>
+    <string name="sms_sent">SMS został wysłany</string>
+    <string name="Wyslij_sms">Wyślij SMS</string>
+    <string name="no_orders_to_send">Brak zamówień do wysłania</string>
+    <string name="order_from_date">Zamówienie z %1$s - %2$s</string>
+    <string name="select_order_for_sms">Wybierz zamówienie do wysłania SMS</string>
+    <string name="cancel">Anuluj</string>
+    <string name="enter_phone_number">Wprowadź numer telefonu</string>
+    <string name="enter_valid_phone">Wprowadź poprawny 9-cyfrowy numer telefonu</string>
+    <string name="order_message_format">Zamówienie:\nZamawiający: %1$s\n%2$s\nSuma: %3$.2f zł</string>
+    <string name="sms_error">Błąd podczas wysyłania SMS: %1$s</string>
+    <string name="sms_permission_required">Aplikacja potrzebuje uprawnień do wysyłania SMS aby kontynuować</string>
+    
+    <string-array name="mouse_options">
+        <item>Mysz Dell MS116 - 35 zł</item>
+        <item>Mysz Logitech M720</item>
+        <item>Mysz Razer DeathAdder</item>
+    </string-array>
+
+    <string-array name="keyboard_options">
+        <item>Klawiatura TITANUM TK101 USB - 19 zł</item>
+        <item>Klawiatura Logitech K800</item>
+        <item>Klawiatura SteelSeries Apex Pro</item>
+    </string-array>
+
+    <string-array name="camera_options">
+        <item>Monitor 4K 32" - 1500 zł</item>
+        <item>Monitor 1080p 24"</item>
+        <item>Monitor LG UltraWide</item>
+    </string-array>
+
+    <string name="menu_save_cart">Zapisz koszyk</string>
+    <string name="menu_load_cart">Wczytaj koszyk</string>
+    <string name="menu_change_language">Zmień język</string>
+    <string name="menu_show_list">Pokaż listę</string>
+    <string name="menu_share">Udostępnij</string>
+    <string name="menu_about">O programie</string>
+    <string name="menu_logout">Wyloguj</string>
+    <string name="logged_in_as">Zalogowany jako: %1$s</string>
+    <string name="computers">Komputery</string>
+    <string name="base_price">Cena podstawowa: %1$.2f zł</string>
+    <string name="quantity_pieces">%1$d szt.</string>
+    <string name="customer_name_hint">Imię i Nazwisko zamawiającego</string>
+    <string name="mice">Myszki</string>
+    <string name="add_mouse">Dodaj myszkę do zamówienia</string>
+    <string name="additional_price">+ %1$.2f zł</string>
+    <string name="keyboards">Klawiatury</string>
+    <string name="add_keyboard">Dodaj klawiaturę do zamówienia</string>
+    <string name="monitors">Monitory</string>
+    <string name="add_monitor">Dodaj monitor do zamówienia</string>
+    <string name="total_order">Suma zamówienia: %1$.2f zł</string>
+    <string name="place_order">Złóż zamówienie</string>
+    <string name="cart_saved">Koszyk został zapisany</string>
+    <string name="cart_loaded">Koszyk został wczytany</string>
+    <string name="no_products_category">Brak produktów w kategorii: %1$s</string>
+    <string name="price_format">Cena: %.2f zł</string>
+    <string name="enter_name">Proszę podać imię i nazwisko</string>
+    <string name="select_product">Proszę wybrać przynajmniej jeden produkt</string>
+    <string name="computer_format">Komputer: %1$s x%2$d (%3$.2f zł)\n</string>
+    <string name="mouse_format">Myszka: %1$s x%2$d (%3$.2f zł)\n</string>
+    <string name="keyboard_format">Klawiatura: %1$s x%2$d (%3$.2f zł)\n</string>
+    <string name="monitor_format">Monitor: %1$s x%2$d (%3$.2f zł)\n</string>
+    <string name="order_confirmation">Potwierdzenie zamówienia</string>
+    <string name="order_details">Zamawiający: %1$s\n\n%2$s\nSuma: %3$.2f zł</string>
+    <string name="confirm">Potwierdź</string>
+    <string name="guest">Gość</string>
+    <string name="login_shortcut_short">Zaloguj się</string>
+    <string name="login_shortcut_long">Przejdź do ekranu logowania</string>
+    <string name="register_shortcut_short">Zarejestruj się</string>
+    <string name="register_shortcut_long">Przejdź do ekranu rejestracji</string>
+    <string name="share_order_title">Wybierz zamówienie do udostępnienia</string>
+    <string name="share_order_subject">Zamówienie ze sklepu komputerowego</string>
+    <string name="share_order_details">Szczegóły zamówienia:\n\nData: %1$s\nZamawiający: %2$s\n\nZamówione produkty:\n%3$s\nSuma zamówienia: %4$.2f zł</string>
+    <string name="share_email">Wyślij email…</string>
+    <string name="about_title">Informacje o autorze</string>
+    <string name="about_content">Aplikacja stworzona przez \nKonrad Szczepaniak</string>
+    <string name="base_price_format">Cena podstawowa: %.2f zł</string>
+    <string name="mouse_addon_price_format">+ %.2f zł</string>
+    <string name="keyboard_addon_price_format">+ %.2f zł</string>
+    <string name="monitor_addon_price_format">+ %.2f zł</string>
+    <string name="mouse_addon_price_default">+ 0.00 zł</string>
+    <string name="keyboard_addon_price_default">+ 0.00 zł</string>
+    <string name="monitor_addon_price_default">+ 0.00 zł</string>
+    <string name="total_price_format">Suma zamówienia: %.2f zł</string>
+    <string name="unit_pieces">szt.</string>
+    <string name="quantity_with_unit">%1$d %2$s</string>
+    <string name="gaming_keyboard">Klawiatura Gamingowa</string>
+    <string name="office_keyboard">Klawiatura Biurowa</string>
+    <string name="multimedia_keyboard">Klawiatura Multimedialna</string>
+    <string name="wireless_keyboard">Klawiatura Bezprzewodowa</string>
+    
+    <string name="gaming_computer">Komputer Gamingowy</string>
+    <string name="office_computer">Komputer Biurkowy</string>
+    <string name="mini_pc">Komputer Mini-PC</string>
+    <string name="all_in_one_computer">Komputer All-in-One</string>
+    
+    <string name="uhd_monitor">Monitor UHD</string>
+    <string name="fhd_monitor">Monitor Full HD</string>
+    <string name="gaming_monitor">Monitor Gamingowy</string>
+    <string name="ultrawide_monitor">Monitor Ultra-Wide</string>
+    
+    <string name="gaming_mouse">Mysz Gamingowa</string>
+    <string name="office_mouse">Mysz Biurkowa</string>
+    <string name="multimedia_mouse">Mysz Multimedialna</string>
+    <string name="professional_mouse">Mysz Profesjonalna</string>
+
+    <string name="gaming_keyboard_desc">Klawiatura mechaniczna RGB idealna dla graczy.</string>
+    <string name="office_keyboard_desc">Ergonomiczna klawiatura do biura.</string>
+    <string name="multimedia_keyboard_desc">Komfortowa klawiatura z dodatkowymi przyciskami multimedialnymi.</string>
+    <string name="wireless_keyboard_desc">Lekka klawiatura bezprzewodowa z baterią na 12 miesięcy.</string>
+    
+    <string name="gaming_computer_desc">Potężny komputer stacjonarny z RTX 3070.</string>
+    <string name="office_computer_desc">Idealny komputer do biura z procesorem i5.</string>
+    <string name="mini_pc_desc">Kompaktowy mini-PC z SSD 512GB.</string>
+    <string name="all_in_one_desc">Ekran + komputer w jednym, procesor Ryzen 5.</string>
+    
+    <string name="uhd_monitor_desc">4K 32-calowy monitor do pracy i rozrywki.</string>
+    <string name="fhd_monitor_desc">Lekki, 24-calowy monitor do codziennego użytku.</string>
+    <string name="gaming_monitor_desc">165Hz, 1ms, 27 cali, świetny do gier.</string>
+    <string name="ultrawide_monitor_desc">34-calowy ekran panoramiczny do profesjonalistów.</string>
+    
+    <string name="gaming_mouse_desc">Myszka z sensorem 16000 DPI, dla zaawansowanych graczy.</string>
+    <string name="office_mouse_desc">Prosta, ergonomiczna myszka przewodowa.</string>
+    <string name="multimedia_mouse_desc">Bezprzewodowa mysz z przyciskami funkcyjnymi.</string>
+    <string name="professional_mouse_desc">Dla grafików i projektantów, precyzyjny sensor.</string>
+
+    <string name="order_list_title">Lista zamówień</string>
+    <string name="order_date_format">Data: %1$s</string>
+    <string name="order_customer_format">Zamawiający: %1$s</string>
+    <string name="order_total_format">Suma zamówienia: %.2f zł</string>
+    <string name="delete_button">Usuń</string>
+    <string name="order_deleted">Zamówienie zostało usunięte</string>
+    <string name="login_successful">Zalogowano pomyślnie</string>
+    <string name="login_error">Błędna nazwa użytkownika lub hasło</string>
+    <string name="username_exists">Użytkownik o tej nazwie już istnieje</string>
+    <string name="empty_fields">Proszę wypełnić wszystkie pola</string>
+    <string name="registration_error">Błąd podczas rejestracji</string>
+</resources>

@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">Computer Shop</string>
+    <string name="shortcut_icon">Shortcut Icon</string>
+    <string name="shortcut_name">Shortcut Name</string>
+    <string name="Glowna">Home</string>
+    <string name="Lista">Order List</string>
+    <string name="Wyslij">Send SMS</string>
+    <string name="Udostepnij">Share</string>
+    <string name="O_programie">About the Program</string>
+    <string name="nazwa_uzytkownika">Username</string>
+    <string name="haslo">Password</string>
+    <string name="zarejestruj">Register</string>
+    <string name="masz_juz_konto_zaloguj_sie">Already have an account? Log in</string>
+    <string name="rejestracja">Registration</string>
+    <string name="login">Login</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="phone_number_hint">Phone number (e.g. 123456789)</string>
+    <string name="toolbar_title">Login Screen</string>
+    <string name="button_register">Register</string>
+    <string name="button_login">Login</string>
+    <string name="order_saved">Order has been saved</string>
+    <string name="order_error">Error saving the order</string>
+    <string name="no_orders">No orders to share</string>
+    <string name="email_error">No email application installed.</string>
+    <string name="registration_successful">Registration successful</string>
+    <string name="sms_sent">SMS has been sent</string>
+    <string name="Wyslij_sms">Send SMS</string>
+    <string name="no_orders_to_send">No orders to send</string>
+    <string name="order_from_date">Order from %1$s - %2$s</string>
+    <string name="select_order_for_sms">Select order to send SMS</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="enter_valid_phone">Enter a valid 9-digit phone number</string>
+    <string name="order_message_format">Order:\nCustomer: %1$s\n%2$s\nTotal: %3$.2f PLN</string>
+    <string name="sms_error">Error sending SMS: %1$s</string>
+    <string name="sms_permission_required">The application needs SMS permissions to continue</string>
+    
+    <string-array name="mouse_options">
+        <item>Dell MS116 Mouse - 35 PLN</item>
+        <item>Logitech M720 Mouse</item>
+        <item>Razer DeathAdder Mouse</item>
+    </string-array>
+
+    <string-array name="keyboard_options">
+        <item>TITANUM TK101 USB Keyboard - 19 PLN</item>
+        <item>Logitech K800 Keyboard</item>
+        <item>SteelSeries Apex Pro Keyboard</item>
+    </string-array>
+
+    <string-array name="camera_options">
+        <item>4K 32" Monitor - 1500 PLN</item>
+        <item>1080p 24" Monitor</item>
+        <item>LG UltraWide Monitor</item>
+    </string-array>
+
+    <string name="menu_save_cart">Save Cart</string>
+    <string name="menu_load_cart">Load Cart</string>
+    <string name="menu_change_language">Change Language</string>
+    <string name="menu_show_list">Show List</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_about">About</string>
+    <string name="menu_logout">Logout</string>
+    <string name="logged_in_as">Logged in as: %1$s</string>
+    <string name="computers">Computers</string>
+    <string name="base_price">Base price: %1$.2f PLN</string>
+    <string name="quantity_pieces">%1$d pcs</string>
+    <string name="customer_name_hint">Customer Name</string>
+    <string name="mice">Mice</string>
+    <string name="add_mouse">Add mouse to order</string>
+    <string name="additional_price">+ %1$.2f PLN</string>
+    <string name="keyboards">Keyboards</string>
+    <string name="add_keyboard">Add keyboard to order</string>
+    <string name="monitors">Monitors</string>
+    <string name="add_monitor">Add monitor to order</string>
+    <string name="total_order">Total order: %1$.2f PLN</string>
+    <string name="place_order">Place Order</string>
+    <string name="cart_saved">Cart has been saved</string>
+    <string name="cart_loaded">Cart has been loaded</string>
+    <string name="no_products_category">No products in category: %1$s</string>
+    <string name="price_format">Price: %.2f PLN</string>
+    <string name="enter_name">Please enter your name</string>
+    <string name="select_product">Please select at least one product</string>
+    <string name="computer_format">Computer: %1$s x%2$d (%3$.2f PLN)\n</string>
+    <string name="mouse_format">Mouse: %1$s x%2$d (%3$.2f PLN)\n</string>
+    <string name="keyboard_format">Keyboard: %1$s x%2$d (%3$.2f PLN)\n</string>
+    <string name="monitor_format">Monitor: %1$s x%2$d (%3$.2f PLN)\n</string>
+    <string name="order_confirmation">Order Confirmation</string>
+    <string name="order_details">Customer: %1$s\n\n%2$s\nTotal: %3$.2f PLN</string>
+    <string name="confirm">Confirm</string>
+    <string name="guest">Guest</string>
+    <string name="login_shortcut_short">Log in</string>
+    <string name="login_shortcut_long">Go to login screen</string>
+    <string name="register_shortcut_short">Register</string>
+    <string name="register_shortcut_long">Go to registration screen</string>
+    <string name="share_order_title">Select order to share</string>
+    <string name="share_order_subject">Order from Computer Shop</string>
+    <string name="share_order_details">Order details:\n\nDate: %1$s\nCustomer: %2$s\n\nOrdered products:\n%3$s\nTotal order: %4$.2f PLN</string>
+    <string name="share_email">Send email…</string>
+    <string name="about_title">About Author</string>
+    <string name="about_content">Application created by \nKonrad Szczepaniak</string>
+    <string name="base_price_format">Base price: %.2f PLN</string>
+    <string name="mouse_addon_price_format">+ %.2f PLN</string>
+    <string name="keyboard_addon_price_format">+ %.2f PLN</string>
+    <string name="monitor_addon_price_format">+ %.2f PLN</string>
+    <string name="mouse_addon_price_default">+ 0.00 PLN</string>
+    <string name="keyboard_addon_price_default">+ 0.00 PLN</string>
+    <string name="monitor_addon_price_default">+ 0.00 PLN</string>
+    <string name="total_price_format">Total order: %.2f PLN</string>
+    <string name="unit_pieces">pcs</string>
+    <string name="quantity_with_unit">%1$d %2$s</string>
+    <string name="gaming_keyboard">Gaming Keyboard</string>
+    <string name="office_keyboard">Office Keyboard</string>
+    <string name="multimedia_keyboard">Multimedia Keyboard</string>
+    <string name="wireless_keyboard">Wireless Keyboard</string>
+    
+    <string name="gaming_computer">Gaming Computer</string>
+    <string name="office_computer">Office Computer</string>
+    <string name="mini_pc">Mini PC</string>
+    <string name="all_in_one_computer">All-in-One Computer</string>
+    
+    <string name="uhd_monitor">UHD Monitor</string>
+    <string name="fhd_monitor">Full HD Monitor</string>
+    <string name="gaming_monitor">Gaming Monitor</string>
+    <string name="ultrawide_monitor">Ultra-Wide Monitor</string>
+    
+    <string name="gaming_mouse">Gaming Mouse</string>
+    <string name="office_mouse">Office Mouse</string>
+    <string name="multimedia_mouse">Multimedia Mouse</string>
+    <string name="professional_mouse">Professional Mouse</string>
+
+    <string name="gaming_keyboard_desc">RGB mechanical keyboard perfect for gamers.</string>
+    <string name="office_keyboard_desc">Ergonomic keyboard for office use.</string>
+    <string name="multimedia_keyboard_desc">Comfortable keyboard with additional multimedia keys.</string>
+    <string name="wireless_keyboard_desc">Lightweight wireless keyboard with 12-month battery life.</string>
+    
+    <string name="gaming_computer_desc">Powerful desktop computer with RTX 3070.</string>
+    <string name="office_computer_desc">Perfect office computer with i5 processor.</string>
+    <string name="mini_pc_desc">Compact mini-PC with 512GB SSD.</string>
+    <string name="all_in_one_desc">Screen + computer in one, Ryzen 5 processor.</string>
+    
+    <string name="uhd_monitor_desc">4K 32-inch monitor for work and entertainment.</string>
+    <string name="fhd_monitor_desc">Light, 24-inch monitor for everyday use.</string>
+    <string name="gaming_monitor_desc">165Hz, 1ms, 27 inches, great for gaming.</string>
+    <string name="ultrawide_monitor_desc">34-inch panoramic screen for professionals.</string>
+    
+    <string name="gaming_mouse_desc">Mouse with 16000 DPI sensor, for advanced gamers.</string>
+    <string name="office_mouse_desc">Simple, ergonomic wired mouse.</string>
+    <string name="multimedia_mouse_desc">Wireless mouse with function buttons.</string>
+    <string name="professional_mouse_desc">For graphic designers and designers, precise sensor.</string>
+
+    <string name="order_list_title">Order List</string>
+    <string name="order_date_format">Date: %1$s</string>
+    <string name="order_customer_format">Customer: %1$s</string>
+    <string name="order_total_format">Total order: %.2f PLN</string>
+    <string name="delete_button">Delete</string>
+    <string name="order_deleted">Order has been deleted</string>
+    <string name="login_successful">Successfully logged in</string>
+    <string name="login_error">Invalid username or password</string>
+    <string name="username_exists">User with this username already exists</string>
+    <string name="empty_fields">Please fill in all fields</string>
+    <string name="registration_error">Registration error</string>
+</resources>
